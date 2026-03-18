@@ -260,58 +260,48 @@
       align-items: center;
       gap: 20px;
       padding: 20px 24px;
-      background: linear-gradient(135deg, #0E7490 0%, #1D4ED8 100%);
+      background: var(--accent-light);
       border-radius: 12px;
       margin-bottom: 24px;
-      color: white;
+      color: var(--text-1);
       position: relative;
       overflow: hidden;
-    }
-    .assistant-banner::before {
-      content: '';
-      position: absolute;
-      right: -40px;
-      top: -40px;
-      width: 200px;
-      height: 200px;
-      background: rgba(255,255,255,0.06);
-      border-radius: 50%;
+      border: 1px solid #B2EBF2;
+      border-left: 4px solid var(--accent);
     }
     .assistant-ic {
       width: 48px; height: 48px;
       border-radius: 12px;
-      background: rgba(255,255,255,0.18);
+      background: var(--accent);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
     }
     .assistant-ic svg { width: 24px; height: 24px; }
-    .assistant-body { flex: 1; position: relative; z-index: 1; }
-    .assistant-body h3 { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
-    .assistant-body p { font-size: 13px; opacity: 0.85; }
+    .assistant-body { flex: 1; }
+    .assistant-body h3 { font-size: 15px; font-weight: 600; margin-bottom: 2px; color: var(--text-1); }
+    .assistant-body p { font-size: 13px; color: var(--text-2); }
     .assistant-example {
       margin-top: 6px;
       font-size: 12px;
-      opacity: 0.7;
+      color: var(--text-3);
       font-style: italic;
     }
     .btn-assistant {
       padding: 9px 20px;
-      background: white;
+      background: var(--accent);
       border: none;
       border-radius: 8px;
-      color: var(--accent);
+      color: white;
       font-size: 13px;
       font-weight: 600;
       cursor: pointer;
       font-family: inherit;
       white-space: nowrap;
       transition: all 0.15s;
-      position: relative;
-      z-index: 1;
     }
-    .btn-assistant:hover { background: #f0f0f0; }
+    .btn-assistant:hover { background: var(--accent-dark); }
 
     /* ── Tool cards grid ── */
     .tools-grid {
